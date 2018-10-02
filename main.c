@@ -2,13 +2,15 @@
 
 int main(void)
 {
-	int sec;
+	int a, b, c;
+	float avg;
 	
-	printf("input the second : ");
-	scanf("%i", &sec);
+	printf("input three numbers : ");
+	scanf("%i %i %i", &a, &b, &c);
 	
-	printf("The time for %i second is %i : %i : %i\n", sec, sec/3600, sec%3600/60, sec%60);
+	avg = (a+b+c)/(float)3;
+	
+	printf("The mean of %i, %i, %i is %f", a, b, c, avg);
 	
 	return 0;
-	
 }
